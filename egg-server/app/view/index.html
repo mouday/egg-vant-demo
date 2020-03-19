@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <h1>这是渲染后的模板</h1>
+    <p>name: <%=res.name%></p>
+    <p>age: <%=res.age%> </p> 
+
+    <% for(var i=0; i<list.length; i++){ %>
+    <p><%=list[i]%></p>    
+    <% } %>
+
+    <!-- 引入图片资源 -->
+    <img src="/public/img/demo.png" alt="">
+
+    <!-- 引入js文件 -->
+    <script src="/public/js/main.js"></script>
+</body>
+</html>
